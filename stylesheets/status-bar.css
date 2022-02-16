@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css2?family=PT+Serif:wght@100;200;300;400;500;600;700&display=swap);
+@import url(//db.onlinewebfonts.com/c/bb018e64d01355748d8ddc53553850b9?family=Cerebri+Sans);
+
+@media (min-width: 0px) {
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT serif";
+    
+  }
+  
+  .perfect_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Mobile {
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .Status_bar {
+    position: static;
+    top: 0;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .status_bar_division1{
+    padding-left: 16px;
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  .status_bar_division2 {
+    padding-right: 4px;
+  }
+
+  .img_container{
+    margin: 0 4px;
+  }
+
+  .body_sections {
+    margin: 0;
+    background-color: rgba(244,245,244,0.75);
+  }
+
+  .body_margin {
+    margin: 0 28px;
+  }
+
+  .cerebri {
+    font-weight: lighter;
+    font-family: "Cerebri Sans";
+  }
+
+}
+
+/* 'xs': '460px', */
+@media (min-width: 460px) {
+  
+}
+
+/* 'sm': '640px', */
+@media (min-width: 640px) {
+}
+
+/* 'md': '768px' */
+@media (min-width: 768px) {
+  
+}
+
+/* 'lg': '1024px' */
+@media (min-width: 1024px) {
+  
+}
+
+/* 'xl': '1280px' */
+@media (min-width: 1280px) {
+}
+
+/* '2xl': '1536px' */
+@media (min-width: 1536px) {
+}

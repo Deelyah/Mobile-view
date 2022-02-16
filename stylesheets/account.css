@@ -1,0 +1,120 @@
+@media (min-width: 0px) {
+  .green_colored_section {
+    margin: 20px 0 0 0;
+    display: flex;
+    border-radius: 8px;
+    height: 64px;
+  }
+
+  .tint {
+    border-radius: 8px 0 0 8px;
+    width: 60%;
+  }
+
+  .tint_of_green {
+    background-color: #cfecff;
+  }
+
+  .account_items {
+    width: 100%;
+    padding: 8px;
+    height: 100%;
+  }
+
+  .main_color {
+    border-radius: 0 8px 8px 0;
+    width: 40%;
+  }
+
+  .main_green {
+    background-color: #00c267;
+  }
+
+  .small_p {
+    line-height: 20px;
+    font-size: 10px;
+  }
+
+  .align_left {
+    text-align: left;
+  }
+
+  .strikethrough {
+    text-decoration: line-through;
+    text-align: center;
+    color: #fff;
+  }
+
+  .orange_colored_section {
+    height: 64px;
+    margin: 20px 0 0 0;
+    display: flex;
+    border-radius: 8px;
+  }
+
+  span {
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  .pay {
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .tint_of_orange {
+    padding: 5px 8px;
+    background-color: #f9f5e1;
+  }
+
+  .meals {
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+  }
+
+  .main_orange {
+    background-color: #ffbe56;
+  }
+
+  .pay_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 320px) {
+  .small_p {
+    font-size: 13px;
+  }
+
+  .meals_p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 460px) {
+}
+
+/* 'sm': '640px', */
+@media (min-width: 640px) {
+}
+
+/* 'md': '768px' */
+@media (min-width: 768px) {
+}
+
+/* 'lg': '1024px' */
+@media (min-width: 1024px) {
+}
+
+/* 'xl': '1280px' */
+@media (min-width: 1280px) {
+}
+
+/* '2xl': '1536px' */
+@media (min-width: 1536px) {
+}
