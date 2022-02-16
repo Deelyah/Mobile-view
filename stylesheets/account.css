@@ -3,7 +3,7 @@
     margin: 20px 0 0 0;
     display: flex;
     border-radius: 8px;
-    height: 64px;
+    /* height: 64px; */
   }
 
   .tint {
@@ -46,10 +46,38 @@
   }
 
   .orange_colored_section {
-    height: 64px;
+    position: relative;
     margin: 20px 0 0 0;
+    /* border-radius: 8px; */
+  }
+
+  .orange_absolute {
     display: flex;
-    border-radius: 8px;
+  }
+
+  .__text {
+    /* Set opacity to 0, then display to none */
+    position: relative;
+    z-index: 5;
+  }
+
+  .__header {
+    /* Set position to relative */
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  .orange_body_container {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 30px;
+  }
+
+  .orange_item {
+    width: 100%;
   }
 
   span {

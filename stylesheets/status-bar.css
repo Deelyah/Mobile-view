@@ -50,8 +50,6 @@
   }
 
   .body_sections {
-    height: 100vh;
-    overflow-y: auto;
     margin: 0;
     background-color: rgba(244,245,244,0.75);
   }
