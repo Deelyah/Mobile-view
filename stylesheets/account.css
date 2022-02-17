@@ -55,13 +55,7 @@
     /* Set position to absolute and width to 100% --1 */
     z-index: 200;
     position: relative;
-    /* position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 200000 */
     margin: 20px 0 0 0;
-    /* border-radius: 8px; */
     transition: all 1s;
   }
   .orange_colored_section.__clicked {
@@ -83,8 +77,6 @@
     /* Set opacity to 0, then display to none --5 */
     position: relative;
     display: flex;
-    /* display: none;
-    opacity: 1; */
     z-index: 1000;
     cursor: pointer;
   }
@@ -105,7 +97,6 @@
   .__header {
     /* Set position to relative --3*/
     position: absolute;
-    /* position: relative; */
     top: 0;
     right: 0;
     left: 0;
@@ -127,8 +118,6 @@
     background-color: #fff;
     padding: 0 30px;
     height: 0;
-    /* padding: 30px 30px;
-    height: auto; */
     overflow: hidden;
     transition: opacity 2s ease;
     transition: 1s ease;
@@ -138,8 +127,6 @@
     /* Set paddding to 30 all-round, and height to auto --2  */
     padding: 30px 30px;
     height: auto;
-    /* border-top-left-radius: 8px;
-    border-top-right-radius: 8px; */
     transition: 1s ease;
   }
 
@@ -168,8 +155,6 @@
     /* Set position to fixed and height to 100vh */
     position: static;
     height: 0;
-    /* position: fixed;
-    height: 100vh; */
     top: 0;
     left: 0;
     width: 100%;
@@ -218,7 +203,7 @@
     font-size: 13px;
     color: #fff;
     text-align: center;
-    /* white-space: nowrap; */
+    
   }
 
   .tint_of_orange {
@@ -241,8 +226,6 @@
   }
 
   .popover_meal p {
-    /* Set padding to 30px --4 */
-    /* padding: 30px; */
     font-family: "PT Serif";
     font-weight: 600;
     font-size: 20px;

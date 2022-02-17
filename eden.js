@@ -11,22 +11,18 @@ const cancelButton = document.querySelector(".cancelButton");
 
 function animateForward() {
   clickCheck.addEventListener("click", function () {
-    // overlay.classList.remove("__unclicked");
-
     clickCheck.classList.add("__clicked");
     popoverMeal.classList.add("__clicked");
     orangeColoredSection.classList.add("__clicked");
     orangeBodyContainer.classList.add("__clicked");
     header.classList.add("__clicked");
 
-    // overlay.classList.add("__clicked");
     addClass(".overlay");
   });
 }
 
 function animateBackward() {
   cancelButton.addEventListener("click", function () {
-    // overlay.classList.remove("__unclicked");
 
     clickCheck.classList.remove("__clicked");
     popoverMeal.classList.remove("__clicked");
@@ -34,7 +30,6 @@ function animateBackward() {
     orangeBodyContainer.classList.remove("__clicked");
     header.classList.remove("__clicked");
 
-    // overlay.classList.add("__clicked");
     addClass(".overlay");
   });
 }
