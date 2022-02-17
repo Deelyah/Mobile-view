@@ -110,12 +110,17 @@
     right: 0;
     left: 0;
     z-index: 0;
+    overflow: hidden;
     transition: 1s ease;
+    border-bottom-right-radius: 8px;
+
   }
   .__header.__clicked {
     /* Set position to relative --3*/
     position: relative;
     transition: 1s ease;
+    border-bottom-right-radius: 0px;
+
   }
 
   .orange_body_container {
@@ -254,6 +259,8 @@
 
   .main_orange {
     background-color: #ffbe56;
+    overflow: hidden;
+    border-bottom-right-radius: 8px;
   }
   .main_orange.popover2 {
     border-bottom-right-radius: 0;
@@ -267,6 +274,12 @@
 }
 
 @media (min-width: 320px) {
+
+  .main_color {
+    border-radius: 0 8px 8px 0;
+    flex: 1 1 31.77%;
+  }
+
   .small_p {
     font-size: 13px;
   }
