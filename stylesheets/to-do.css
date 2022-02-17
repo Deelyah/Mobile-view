@@ -1,8 +1,48 @@
-.tomorrow {
-  color: #00C267;
-  font-size: 17px;
-  line-height: 22px;
-  margin-top: 0;
-  margin-bottom: 15px;
+/* 'xs': '460px', */
+@media (min-width: 0px) {
+.to_do {
+  padding-bottom: 30px;
+  border-radius: 8px;
 }
 
+  .tomorrow {
+    color: #00c267;
+    font-size: 17px;
+    line-height: 22px;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  
+  .time {
+    flex: 1 1 15.36%;
+    margin-right: 10px;
+  }
+  
+  .time_p {
+    font-size: 12px;
+    line-height: 15px;
+    color: #333;
+    white-space: nowrap;
+  }
+  
+  .task {
+    padding: 13px 4px 13px 15px;
+    background-color: #c6d6e4;
+  }
+  
+  .task_p {
+    flex: 1 1 81.5%;
+    font-size: 12px;
+    line-height: 19px;
+    color: #121212;
+  }
+  
+  
+  
+}
+
+@media (min-width: 380px) {
+  .task_p {
+    font-size: 14px;
+  }
+}

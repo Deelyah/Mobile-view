@@ -1,0 +1,16 @@
+.footer {
+  background-color: rgba(244,244,244,0.75);
+  display: flex;
+  padding-bottom: 20px ;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* .footer_item {
+  margin-right: 44px;
+} */
+
+.footer_item p {
+  font-size: 12px;
+}
