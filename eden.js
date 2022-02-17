@@ -17,6 +17,7 @@ function animateForward() {
     popoverMeal.classList.add("__clicked");
     orangeColoredSection.classList.add("__clicked");
     orangeBodyContainer.classList.add("__clicked");
+    header.classList.add("__clicked");
 
     // overlay.classList.add("__clicked");
     addClass(".overlay");
@@ -31,6 +32,7 @@ function animateBackward() {
     popoverMeal.classList.remove("__clicked");
     orangeColoredSection.classList.remove("__clicked");
     orangeBodyContainer.classList.remove("__clicked");
+    header.classList.remove("__clicked");
 
     // overlay.classList.add("__clicked");
     addClass(".overlay");

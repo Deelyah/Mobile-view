@@ -117,10 +117,9 @@
   }
   .__header.__clicked {
     /* Set position to relative --3*/
-    position: relative;
-    transition: 1s ease;
+    position: static !important;
     border-bottom-right-radius: 0px;
-
+    transition: 1s ease;
   }
 
   .orange_body_container {
@@ -139,8 +138,8 @@
     /* Set paddding to 30 all-round, and height to auto --2  */
     padding: 30px 30px;
     height: auto;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    /* border-top-left-radius: 8px;
+    border-top-right-radius: 8px; */
     transition: 1s ease;
   }
 
