@@ -1,6 +1,6 @@
 "use strict";
 
-const foodActive = false;
+let clicked = false;
 const clickCheck = document.querySelector(".__text");
 const orangeColoredSection = document.querySelector(".orange_colored_section");
 const header = document.querySelector(".__header");
@@ -9,12 +9,9 @@ const overlay = document.querySelector(".overlay");
 const popoverMeal = document.querySelector(".popover_meal p");
 const cancelButton = document.querySelector(".cancelButton");
 
-function animate() {
+function animateForward() {
   clickCheck.addEventListener("click", function () {
-
     // overlay.classList.remove("__unclicked");
-
-
 
     clickCheck.classList.add("__clicked");
     popoverMeal.classList.add("__clicked");
@@ -22,31 +19,37 @@ function animate() {
     orangeBodyContainer.classList.add("__clicked");
 
     // overlay.classList.add("__clicked");
-    addClass('.overlay', '__clicked', 1000)
-
+    addClass(".overlay");
   });
 }
 
-// Cancel first modal function
-function cancelFoodModal() {
-  cancelButton.addEventListener("click", function (e) {
-    console.log(cancelButton);
-    // e.stopPropagation()
+function animateBackward() {
+  cancelButton.addEventListener("click", function () {
+    // overlay.classList.remove("__unclicked");
+
     clickCheck.classList.remove("__clicked");
     popoverMeal.classList.remove("__clicked");
     orangeColoredSection.classList.remove("__clicked");
     orangeBodyContainer.classList.remove("__clicked");
 
-    addClass('.overlay', '__unclicked', 1000)
-    // overlay.classList.remove("__clicked");
-    // overlay.classList.add("__unclicked");
+    // overlay.classList.add("__clicked");
+    addClass(".overlay");
   });
 }
 
-function addClass(classname, add, time) {
-  document.querySelector(classname).classList.remove('add')
-  document.querySelector(classname).classList.add(add)
+function addClass(classname) {
+  if (clicked) {
+    document.querySelector(classname).classList.remove("__clicked");
+    document.querySelector(classname).classList.add("__unclicked");
+    console.log(document.querySelector(classname));
+    clicked = false
+  } else {
+    document.querySelector(classname).classList.remove("__unclicked");
+    document.querySelector(classname).classList.add("__clicked");
+    console.log(document.querySelector(classname));
+    clicked = true
+  }
 }
 
-animate();
-cancelFoodModal();
+animateForward()
+animateBackward()

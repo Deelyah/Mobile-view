@@ -62,8 +62,8 @@
     z-index: 200000 */
     margin: 20px 0 0 0;
     /* border-radius: 8px; */
+    transition: all 1s;
   }
-
   .orange_colored_section.__clicked {
     /* Set position to absolute and width to 100% --1 */
     position: absolute;
@@ -72,6 +72,7 @@
     width: 100%;
     z-index: 200000;
     border-radius: 8px;
+    transition: all 1s;
   }
 
   .orange_absolute {
@@ -92,6 +93,13 @@
     /* Set opacity to 0, then display to none --5 */
     display: none;
     opacity: 1;
+    transition: 1s ease;
+  }
+  .__text.__unclicked {
+    /* Set opacity to 0, then display to none --5 */
+    display: flex;
+    opacity: 0;
+    transition: 1s ease;
   }
 
   .__header {
@@ -102,10 +110,12 @@
     right: 0;
     left: 0;
     z-index: 0;
+    transition: 1s ease;
   }
   .__header.__clicked {
     /* Set position to relative --3*/
     position: relative;
+    transition: 1s ease;
   }
 
   .orange_body_container {
@@ -117,6 +127,7 @@
     height: auto; */
     overflow: hidden;
     transition: opacity 2s ease;
+    transition: 1s ease;
   }
 
   .orange_body_container.__clicked {
@@ -125,6 +136,7 @@
     height: auto;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    transition: 1s ease;
   }
 
   .orange_item {
@@ -165,12 +177,15 @@
   }
   .overlay.__clicked {
     /* Set opacity to 1 and display to block */
-    /* opacity: .8; */
+    opacity: 0.8;
     height: 100vh;
-    animation: overlay 1s ease 1 normal forwards;
+    transition: opacity 1s ease, height 0.1s ease;
   }
+
   .overlay.__unclicked {
-    animation: overlay 1s ease 1 normal forwards;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease, height 0.1s 1s ease;
   }
   @keyframes overlay {
     0% {
@@ -233,6 +248,8 @@
   .popover_meal p.__clicked {
     /* Set padding to 30px --4 */
     padding: 30px;
+    transition: 1s ease;
+
   }
 
   .main_orange {
