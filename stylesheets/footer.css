@@ -1,16 +1,28 @@
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #f4f4f4bf;
+}
+
 .footer {
-  background-color: rgba(244,244,244,0.75);
+  background-color: #f4f4f4bf;
   display: flex;
-  padding-bottom: 20px ;
+  padding: 10px 0 20px;
   width: 100%;
   justify-content: space-around;
   align-items: center;
 }
 
-/* .footer_item {
-  margin-right: 44px;
-} */
+.footer_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .footer_item p {
   font-size: 12px;
+  margin-top: 5px;
 }
